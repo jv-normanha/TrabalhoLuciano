@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.cadastroUsuario.TelaUsuarioController">
+   <children>
+      <BorderPane layoutY="1.0" prefHeight="400.0" prefWidth="600.0">
+         <left>
+            <Pane prefHeight="400.0" prefWidth="297.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView prefHeight="400.0" prefWidth="298.0">
+                    <columns>
+                      <TableColumn fx:id="colummUser" prefWidth="172.0" text="Usuario" />
+                      <TableColumn prefWidth="125.0" text="Status" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </left>
+         <right>
+            <Pane prefHeight="400.0" prefWidth="304.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtUser" layoutX="78.0" layoutY="133.0" promptText="Usuario" />
+                  <PasswordField fx:id="txtPass" layoutX="78.0" layoutY="188.0" promptText="Senha" text="txtPass" />
+                  <PasswordField fx:id="txtRePass" layoutX="78.0" layoutY="243.0" promptText="Repetir senha" />
+                  <Label layoutX="58.0" layoutY="55.0" prefHeight="28.0" prefWidth="201.0" text="Cadastrar novo Usuario">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="58.0" layoutY="110.0" text="Usuario" />
+                  <Label layoutX="62.0" layoutY="165.0" text="Senha" />
+                  <Label layoutX="62.0" layoutY="218.0" text="Repetir senha" />
+                  <Button layoutX="53.0" layoutY="302.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="83.0" text="Cadastrar" />
+                  <Button layoutX="152.0" layoutY="303.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="96.0" text="Voltar" />
+               </children>
+            </Pane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
