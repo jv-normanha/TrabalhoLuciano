@@ -25,7 +25,7 @@ public class TelaUsuarioController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    
+    /*
     
     private void salvar(ActionEvent event) {
         
@@ -45,5 +45,6 @@ public class TelaUsuarioController implements Initializable {
     
                     pBO.salvar(u);
                     
-                    limparCampos();
+                    limparCampos(); 
+*/
 }
